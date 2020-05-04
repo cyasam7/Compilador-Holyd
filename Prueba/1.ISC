@@ -1,0 +1,7 @@
+holyd prueba:
+define x,y,z:int;
+while 5>z:
+x=y+z;
+elihw;
+x=0;
+finish

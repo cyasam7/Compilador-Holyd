@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>848</width>
+    <height>637</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>410</y>
+      <width>261</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Analizar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>16</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Texto</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>20</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lista de Tokens</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>240</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Errores</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="TextoAnalizar">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>421</width>
+      <height>351</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tabla">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>40</y>
+      <width>341</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>341</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>341</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <column>
+     <property name="text">
+      <string notr="true">Estado</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Token</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Descripcion</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableWidget" name="tablaErrores">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>260</y>
+      <width>341</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Estado</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Token</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Descripcion</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableWidget" name="tablaCuadruplos">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>410</y>
+      <width>501</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Contador</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Operador</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Operando1</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Operando2</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Resultado</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>848</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionGuardar"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbrir">
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/iconfinder_Open_1493293.png</normaloff>:/iconfinder_Open_1493293.png</iconset>
+   </property>
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/iconfinder_Save_1493294.png</normaloff>:/iconfinder_Save_1493294.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Iconos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

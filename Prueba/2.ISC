@@ -1,0 +1,8 @@
+holyd hola:
+define a,b,c,d:int;
+if a>b:
+a=b*c;
+else:
+a=c*d;
+fi;
+finish

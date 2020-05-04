@@ -1,0 +1,12 @@
+holyd hola:
+define x,y,a,b:int;
+if x>y:
+if a>b:
+a=a+1;
+else:
+b=b+1;
+fi;
+else:
+x=x+1;
+fi;
+finish
